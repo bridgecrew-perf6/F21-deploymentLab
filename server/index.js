@@ -8,10 +8,10 @@ app.get('/', (req, res) => {
 });
 app.get('/css', (req, res) => {
     res.sendFile(path.join(__dirname, '../styles.css'))
-})
+});
 
-const port = process.env.PORT || 4006
+const port = process.env.PORT || 4006;
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`)
-})
+});
